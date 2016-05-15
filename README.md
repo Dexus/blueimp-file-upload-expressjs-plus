@@ -1,3 +1,8 @@
+# Modifications
+* imageVersions (support for width='auto')
+* modify filename
+
+
 # Blueimp file upload for Express js
 
 [![Build Status](https://travis-ci.org/arvindr21/blueimp-file-upload-expressjs.svg?branch=master)](https://travis-ci.org/arvindr21/blueimp-file-upload-expressjs) [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/arvindr21/blueimp-file-upload-expressjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
