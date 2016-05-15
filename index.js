@@ -6,6 +6,7 @@ var configs = require('./lib/configs.js');
 var formidable = require('formidable');
 var fs = require('fs');
 var path = require('path');
+var uuid = require( 'uuid' );
 
 module.exports = uploadService;
 
@@ -75,6 +76,10 @@ function uploadService(opts) {
             tmpFiles.push(file.path);
             // fix #41
             configs.saveFile = true;
+
+            // unique filename
+            if ( options.uniqueFilename ) file.name = uuid.v1() + file.substr( file.name.lastIndexOf('.') );
+
             var fileInfo = new FileInfo(file, configs, fields);
             map[fileInfo.key] = fileInfo;
             files.push(fileInfo);
