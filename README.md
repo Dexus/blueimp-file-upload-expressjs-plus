@@ -1,6 +1,7 @@
 # Modifications
 * imageVersions (support for width='auto')
 * uniqueFilename: true (generate uuid filename)
+* thumbnail (changed width from 99 to 100)
 
 
 # Blueimp file upload for Express js
