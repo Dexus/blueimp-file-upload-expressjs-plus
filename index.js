@@ -78,7 +78,7 @@ function uploadService(opts) {
             configs.saveFile = true;
 
             // unique filename
-            if ( options.uniqueFilename ) file.name = uuid.v1() + file.substr( file.name.lastIndexOf('.') );
+            if ( options.uniqueFilename ) file.name = uuid.v1() + file.name.substr( file.name.lastIndexOf('.') );
 
             var fileInfo = new FileInfo(file, configs, fields);
             map[fileInfo.key] = fileInfo;
