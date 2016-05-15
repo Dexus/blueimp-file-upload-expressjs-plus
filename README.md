@@ -1,6 +1,6 @@
 # Modifications
 * imageVersions (support for width='auto')
-* modify filename
+* uniqueFilename: true (generate uuid filename)
 
 
 # Blueimp file upload for Express js
