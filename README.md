@@ -5,6 +5,11 @@ options = {
   uniqueFilename: true,
   imageVersions:{
     desktop: {
+      maxWidth: 1200,
+      maxHeight: 1200,
+      keepAspectRatio: true
+    },
+    tablet: {
       width: 'auto',
       height: 600
     }
@@ -14,6 +19,7 @@ options = {
 ```
 IMPORTANT: These changes has only been tested to local not aws.
 * imageVersions (support for width='auto')
+* imageVersions (support for maxWidth + maxHeight + keepAspectRatio) has to be used together
 * uniqueFilename: true (generate uuid filename)
 * thumbnail (changed default width from 99 to 100)
 * saveOriginal: false (blueimp saves original but added this flag to remove original in case all you want is the resized imageVersions)
