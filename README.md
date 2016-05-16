@@ -12,7 +12,7 @@ options = {
 };
 
 ```
-
+IMPORTANT: These changes has only been tested to local not aws.
 * imageVersions (support for width='auto')
 * uniqueFilename: true (generate uuid filename)
 * thumbnail (changed default width from 99 to 100)
