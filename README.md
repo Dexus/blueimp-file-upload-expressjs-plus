@@ -31,7 +31,7 @@ IMPORTANT: These changes have only been made to and tested on local - not aws.
 * uniqueFilename: true (generate uuid filename)
 * thumbnail (changed default width from 99 to 100)
 * saveOriginal: false (blueimp saves original but added this flag to remove original in case all you want is the resized imageVersions)
-* removed copyImgAsThumb dependency. if you set it to true it'll create the default thumbnail. but if you don't use it and just set a bunch of imageVersions it'll create those versions anyways.
+* removed copyImgAsThumb dependency. if you set it to true it'll create the default thumbnail. but if you don't use it and just set a bunch of imageVersions it'll create those versions without relying on the copyImgAsThumb flag being set to true.
 
 # Blueimp file upload for Express js
 
