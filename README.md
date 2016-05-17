@@ -1,13 +1,21 @@
-# Modifications
+## Installation
+
+Setup an *Express* project and install the package.
+
+```js
+$ npm install pixelsandcandy/blueimp-file-upload-expressjs-plus
+
+var uploader = require('blueimp-file-upload-expressjs-plus')(options);
+```
+
+## Modifications
 ```js
 options = {
   saveOriginal: false,
   uniqueFilename: true,
   imageVersions:{
     desktop: {
-      maxWidth: 1200,
-      maxHeight: 1200,
-      keepAspectRatio: true
+      maxDimension: 1200
     },
     tablet: {
       width: 'auto',
@@ -19,7 +27,7 @@ options = {
 ```
 IMPORTANT: These changes has only been tested to local not aws.
 * imageVersions (support for width='auto')
-* imageVersions (support for maxWidth + maxHeight + keepAspectRatio) has to be used together
+* imageVersions (support for maxDimension) makes width or height, whichever is longer, the maxDimension and then finds the proportionally correct dimension for the other.
 * uniqueFilename: true (generate uuid filename)
 * thumbnail (changed default width from 99 to 100)
 * saveOriginal: false (blueimp saves original but added this flag to remove original in case all you want is the resized imageVersions)
