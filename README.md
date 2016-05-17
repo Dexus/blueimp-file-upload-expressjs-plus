@@ -25,7 +25,7 @@ options = {
 };
 
 ```
-IMPORTANT: These changes has only been tested to local not aws.
+IMPORTANT: These changes have only been made to and tested on local - not aws.
 * imageVersions (support for width='auto')
 * imageVersions (support for maxDimension) makes width or height, whichever is longer, the maxDimension and then finds the proportionally correct dimension for the other.
 * uniqueFilename: true (generate uuid filename)
