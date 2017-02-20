@@ -1,5 +1,7 @@
 ## Installation
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Dexus/blueimp-file-upload-expressjs-plus.svg)](https://greenkeeper.io/)
+
 Setup an *Express* project and install the package.
 
 ```js
